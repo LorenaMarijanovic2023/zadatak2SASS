@@ -1,0 +1,19 @@
+.nekiSadrzaj {
+    background-color: yellow;
+    height: $var50;
+    text-align: center;
+    padding: 2em;
+    .funkcija_mixins { //gniježđenje
+        @include rounded($slovaNav, $var1); //Mixin
+        padding: 1em;
+    }
+    .nekaKlasa { //gniježđenje
+        padding: 1em;
+        background-color: #ff0000;
+        height: $var100/$var50; //Operator
+    }
+    .nasljedjuje { //gniježđenje
+        @extend .nekaKlasa; //Extend
+        border: 1em solid black;
+    }
+}

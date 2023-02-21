@@ -1,0 +1,18 @@
+@import "variable";// prvo smo inportovali varijable kako bi mixin-i bili u funkciji  i ostali fajlovi koje importujemo a gde se koriste varijable
+@import "mixins";// zatim smo inportovali mixin-e pre ostalih fajlova kako bi ostali fajlovi mogli da iskoriste mixin-e
+@import "navigacija";         // ostali fajlovi mogu slobodno da koriste variable i mixin-e posto smo ih inportovali posle njih
+@import "rounded";
+@import "footer";
+@import "zadatak"; //CAMPSTER - UVOZ DRUGE DATOTEKE
+
+*{// ovim kodom smo ponistili sve margine i padding-e
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: green;
+}
+.wrapper{
+    max-width: $var2;// sirina wrapper-a je vrednos variable var2
+    margin: auto;
+}
